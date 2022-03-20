@@ -1,0 +1,97 @@
+.photo-grid {
+  margin: 0 0 92px 0;
+}
+
+.photo-grid__beach {
+  grid-area: picture1;
+}
+
+.photo-grid__ocean {
+  grid-area: picture2;
+}
+
+.photo-grid__field {
+  grid-area: picture3;
+}
+
+.photo-grid__park {
+  grid-area: picture4;
+}
+
+.photo-grid__sky {
+  grid-area: picture5;
+}
+
+.photo-grid__city {
+  grid-area: picture6;
+}
+
+.photo-grid__hut {
+  grid-area: picture7;
+}
+
+.photo-grid__house {
+  grid-area: picture8;
+}
+
+.photo-grid__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 284px);
+  grid-template-areas:
+    "picture1 picture2 picture5 picture6"
+    "picture3 picture4 picture7 picture8";
+  grid-gap: 16px;
+  margin: 0;
+  padding: 0 48px;
+  justify-content: center;
+}
+
+.photo-grid__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1279px) {
+  .photo-grid {
+    margin-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .photo-grid__list {
+    padding: 0 24px;
+    grid-template-columns: 352px 352px;
+    grid-template-areas:
+      "picture1 picture2"
+      "picture3 picture4"
+      "picture5 picture6"
+      "picture7 picture8";
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .photo-grid {
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .photo-grid__list {
+    padding: 0 16px;
+    grid-template-columns: 288px;
+    grid-template-areas:
+      "picture1"
+      "picture2"
+      "picture3"
+      "picture4"
+      "picture5"
+      "picture6"
+      "picture7"
+      "picture8";
+    justify-content: center;
+    grid-gap: 12px;
+  }
+}

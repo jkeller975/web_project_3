@@ -1,0 +1,122 @@
+.cover {
+  font-family: "Inter", Arial, sans-serif;
+  padding: 92px 0 92px;
+  margin: 0 auto;
+}
+
+.cover__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  margin: 0 auto 32px auto;
+  line-height: 1.05;
+}
+
+.cover__subtitle {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  margin: 0;
+}
+
+.cover__button {
+  display: flex;
+  grid-area: button;
+  background-color: #0278fe;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.21;
+  color: #fff;
+  width: 137px;
+  height: 48px;
+  margin: 32px auto 0 auto;
+}
+
+.cover__button:hover {
+  background-color: #0063d2;
+}
+
+.cover__item {
+  min-height: 740px;
+  color: #fff;
+  box-sizing: border-box;
+  background-image: url(../images/footer_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.cover__item::before {
+  content: "";
+  background: #2a2c2f;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  z-index: -1;
+}
+
+.cover__item:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1140px) {
+  .cover__item {
+    min-height: 740px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .cover__item {
+    min-height: 740px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cover__item {
+    min-height: 256px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cover__title {
+    font-size: 32px;
+    margin: 0 auto 16px auto;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .cover__button {
+    margin-top: 16px;
+  }
+}

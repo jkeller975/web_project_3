@@ -1,0 +1,91 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 984px;
+}
+
+.intro__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  margin: 0 0 40px 0;
+  max-width: 785px;
+}
+
+.intro__quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 690px;
+}
+
+.intro__quote_text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.417;
+  margin: 0 0 10px 0;
+}
+
+.intro__quote_name {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.417;
+  margin: 0 0 32px 0;
+  align-self: flex-end;
+}
+
+.intro__description {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  max-width: 690px;
+  margin: 0 0 118px 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .intro {
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro__quote {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro__description {
+    margin-bottom: 88px;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro {
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro__quote_text {
+    line-height: 1.25;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .intro__description {
+    margin-bottom: 90px;
+  }
+}
