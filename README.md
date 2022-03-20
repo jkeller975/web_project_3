@@ -31,4 +31,4 @@ Good luck and have fun!
 
 **GitHub Page**
 
-- View the project at the following link: [Link to the final webpage on GitHub](XXXXX)
+- View the project at the following link: [Link to the final webpage on GitHub](https://jkeller975.github.io/web_project_3/)
