@@ -20,7 +20,7 @@
   max-width: 690px;
 }
 
-.intro__quote_text {
+.intro__quote-text {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -28,7 +28,7 @@
   margin: 0 0 10px 0;
 }
 
-.intro__quote_name {
+.intro__quote-name {
   font-family: "Inter", Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -79,7 +79,7 @@
 }
 
 @media screen and (max-width: 730px) {
-  .intro__quote_text {
+  .intro__quote-text {
     line-height: 1.25;
   }
 }
