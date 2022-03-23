@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 460px 1fr;
   grid-template-rows: auto auto 1fr;
-  grid-gap: 48px 40px;
+  gap: 48px 40px;
   grid-template-areas:
     "title artist"
     "image description"
@@ -45,7 +45,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.21;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .places__artist-name {
@@ -53,6 +55,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
+  margin: 0;
 }
 
 .places__button {
@@ -103,7 +106,7 @@
 @media screen and (max-width: 1140px) {
   .places__item {
     grid-template-columns: 340px 1fr;
-    grid-gap: 48px 28px;
+    gap: 48px 28px;
     margin-right: 24px;
     margin-left: 24px;
     margin-bottom: 72px;
@@ -132,7 +135,7 @@
       "image"
       "description"
       "button";
-    grid-gap: 32px;
+    gap: 32px;
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 49px;
@@ -142,7 +145,6 @@
 @media screen and (max-width: 640px) {
   .places__title {
     font-size: 32px;
-    line-height: 1.09;
     margin-right: 16px;
     margin-left: 16px;
   }

@@ -2,46 +2,14 @@
   margin: 0 0 92px 0;
 }
 
-.photo-grid__beach {
-  grid-area: picture1;
-}
-
-.photo-grid__ocean {
-  grid-area: picture2;
-}
-
-.photo-grid__field {
-  grid-area: picture3;
-}
-
-.photo-grid__park {
-  grid-area: picture4;
-}
-
-.photo-grid__sky {
-  grid-area: picture5;
-}
-
-.photo-grid__city {
-  grid-area: picture6;
-}
-
-.photo-grid__hut {
-  grid-area: picture7;
-}
-
-.photo-grid__house {
-  grid-area: picture8;
-}
-
 .photo-grid__list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, 284px);
   grid-template-areas:
-    "picture1 picture2 picture5 picture6"
-    "picture3 picture4 picture7 picture8";
-  grid-gap: 16px;
+    "picture1 picture2 picture3 picture4"
+    "picture5 picture6 picture7 picture8";
+  gap: 16px;
   margin: 0;
   padding: 0 48px;
   justify-content: center;
@@ -68,7 +36,6 @@
       "picture3 picture4"
       "picture5 picture6"
       "picture7 picture8";
-    justify-content: center;
   }
 }
 
@@ -91,7 +58,6 @@
       "picture6"
       "picture7"
       "picture8";
-    justify-content: center;
-    grid-gap: 12px;
+    gap: 12px;
   }
 }
